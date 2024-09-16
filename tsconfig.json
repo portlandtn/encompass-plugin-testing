@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5",   // You can keep the target as ES5 if you want to transpile down to ES5
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "lib": ["ES2015", "dom"],  // Add ES2015 for Promise, and 'dom' if you're using DOM methods
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
